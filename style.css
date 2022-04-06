@@ -1,0 +1,137 @@
+#topBanner{
+    width: 99%; 
+}
+
+#title-container{
+    width:49%;
+    height: 65px;
+    float:left;
+    background-color: #212121;
+    border-radius: 4px;
+    border-color: #212121;
+    box-shadow: 2px 2px;
+}
+
+#audio-container{
+    width:49%;
+    float:right;
+}
+
+
+body{
+    background-color: #121212;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: #1db954;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+
+/* CSS for responsive svg found at: https://stackoverflow.com/a/25978286 */
+
+.chart-container{
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    width: 49%;
+    float: left;
+    box-shadow: 2px 2px;
+}
+
+.pie-container{
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    width: 49%;
+    float: right;
+    box-shadow: 2px 2px;
+}
+
+.scatter-container{
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    width: 49%;
+    float: left;
+    box-shadow: 2px 2px;
+    margin-top: 10px;
+}
+
+.list-container{
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    width: 49%;
+    float: right;
+    box-shadow: 2px 2px;
+    margin-top: 10px;
+}
+
+.dropdown-container{
+    margin: 5px;
+    width: 49%;
+}
+
+
+audio{
+    margin-left: 50px;
+    float:right;
+}
+p{
+    display: inline;
+    font-size: 13px;
+}
+
+
+.selection{
+    text-align: center;
+    background-color: #212121 ;
+    color: #b3b3b3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px black;
+    margin-top:5px;
+}
+
+.resetButton{
+    text-align: center;
+    background-color: #212121 ;
+    color: #b3b3b3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px black;
+    margin-left: 25px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.resetButton:active {
+    background-color: #494949;
+    box-shadow: 2px 2px black;
+    transform: translateY(1px);
+  }
+
+/* https://bl.ocks.org/d3noob/a22c42db65eb00d4e369 */
+.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 37px;					
+    padding: 2px;						
+    background: #1db954;	
+    border: solid #212121 2px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.previewText{
+    font-size:12px;
+}
+
+.listitem{
+    fill: #1faa50;
+    text-decoration: underline;
+}
