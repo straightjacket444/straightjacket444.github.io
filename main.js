@@ -1,32 +1,30 @@
-let loc = "https://raw.githubusercontent.com/cd94/f20dv_lab4/master/data.csv";
+let loc = "https://raw.githubusercontent.com/Alennon630/lab4/main/heroes_information.csv";
+let heros = "https://raw.githubusercontent.com/Alennon630/lab4/main/heros.csv";
 
 let dataMap = new Map();
-let keyMap = new Map();
-let MajMinMap = new Map();
-let SongMap = new Map();
+let publishmap = new Map();
+let alignmap = new Map();
+let heroMap = new Map();
 
-let acousticness = [];
-let danceability = [];
-let energy = [];
-let instrumentalness = [];
-let liveness = [];
-let speechiness = [];
+let identity = [];
+let name = [];
+let gender = [];
+let race = [];
+let publisher = [];
+let alignment = [];
+let firstApp = [];
+let intel = [];
 let KeyPie = [];
 let ModePie= [];
 let scatter = [];
 let PopList = [];
 
-let first = {id:"",pop:0};
-let second = {id:"",pop:0};
-let third = {id:"",pop:0};
-let fourth = {id:"",pop:0};
-
 
 let yearList = [];
 
-let currCategory = "Acousticness"
+let currCategory = "publisher"
 
-const data = ["Acousticness", "Danceability", "Energy", "Instrumentalness", "Liveness", "Speechiness"]
+const data = ["Publisher", "First Apperance", "Gender", "Alignment"]
 
 // Dropdown found at: https://stackoverflow.com/questions/33777272/creating-a-drop-down-with-d3-js
 const dropdown = d3.select("body")
@@ -53,7 +51,7 @@ options.text(data=>data)
 d3.select("select")
     .on("change",()=>{ var selected = d3.select("select").node().value; onSelection(selected);})
 
-d3.csv(loc,function(data){
+d3.csv(heros,function(data){
     return data;
 }).then(function(data){
 
